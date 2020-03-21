@@ -1,0 +1,53 @@
+.nav {
+  background: var(--primary);
+  padding: 1.5rem 0;
+  overflow: hidden;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__items {
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  &__link {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: white;
+    padding: 2rem 1rem;
+    transition: all 0.38s ease-in-out;
+
+    &:hover {
+      background: var(--dark);
+    }
+  }
+}
+
+.active__link {
+  background: var(--dark);
+}
+
+.logo {
+  &__text {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    color: var(--light);
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.cart {
+  &__icon {
+  }
+}

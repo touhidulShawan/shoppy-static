@@ -1,0 +1,13 @@
+:root {
+  --bg: #f2f2f2;
+  --primary: #50abbf;
+  --secondary: #f2d027;
+  --accent: #f2e52e;
+  --dark: #bfa004;
+  --light: #eaf0f1;
+  --shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+}
+
+body {
+  background: var(--bg);
+}
