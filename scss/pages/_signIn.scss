@@ -1,0 +1,61 @@
+@import "../mixins/mixin";
+
+.login__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem auto;
+  width: 75vw;
+  height: 75vh;
+}
+
+.login__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signIn__avatar {
+  width: 20rem;
+  height: 20rem;
+  margin-bottom: 2.5rem;
+  object {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// signin form
+
+.signIn {
+  .form__field {
+    @include inputField;
+  }
+
+  .btn__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .btn--submit {
+    @include btn;
+    border: 1px solid var(--secondary);
+    padding: 1.2rem 2.5rem;
+    line-height: 1.8rem;
+    text-align: center;
+  }
+
+  .btn--signUp {
+    @include btn;
+    background: none;
+    color: var(--color);
+
+    &:hover {
+      background: transparent;
+      color: var(--primary);
+    }
+  }
+}

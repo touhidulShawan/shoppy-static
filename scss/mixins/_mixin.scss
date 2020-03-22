@@ -1,0 +1,35 @@
+@mixin inputField {
+  input[type="text"],
+  input[type="password"] {
+    margin-bottom: 2.8rem;
+    background: var(--bg);
+    outline: none;
+    border: none;
+    border-left: 5px solid var(--accent);
+    color: var(--color);
+    padding: 1.3rem 2rem;
+    width: 35rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.24rem;
+    box-shadow: 0px 1.35px 1.45px 1px rgba(0, 0, 0, 0.9);
+  }
+}
+
+@mixin btn {
+  // padding: 1.2rem 2.2rem;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  color: var(--primary);
+  letter-spacing: 0.25rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.4s ease-in-out;
+  text-decoration: none;
+  background: transparent;
+
+  &:hover {
+    color: var(--dark);
+  }
+}
