@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +7,20 @@
 
 html {
   font-size: 10px;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  background: var(--bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
 }
 
 ul {

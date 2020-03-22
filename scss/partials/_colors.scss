@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,500&display=swap");
 :root {
   --bg: #182026;
   --primary: #f2e8df;
@@ -7,8 +8,4 @@
   --light: #eaf0f1;
   --dark: #8c6354;
   --shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
-}
-
-body {
-  background: var(--bg);
 }

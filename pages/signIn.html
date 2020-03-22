@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHOPPY</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="nav">
+      <div class="container nav__container">
+        <a href="../index.html" class="logo">
+          <span class="logo__text">shoppy</span>
+        </a>
+        <ul class="nav__ul">
+          <li class="nav__items">
+            <a href="../index.html" class="nav__link ">home</a>
+          </li>
+          <li class="nav__items">
+            <a href="./shop.html" class="nav__link">shop</a>
+          </li>
+          <li class="nav__items">
+            <a href="./signIn.html" class="nav__link active__link">Login</a>
+          </li>
+          <li class="cart">
+            <span class="cart__icon">
+              <img src="../img/icons/shopping_cart.svg" alt="cart icon" />
+            </span>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- navbar end  -->
+    <!-- page main content start here - -->
+    <div class="login__container container">
+      <div class="login__wrapper">
+        <!-- signIn  start -->
+        <div class="signIn__avatar">
+          <object
+            data="../img/icons/female_avatar.svg"
+            type="image/svg+xml"
+            class="avatar-icon"
+          ></object>
+        </div>
+        <div class="signIn">
+          <form action="">
+            <div class="form__field">
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Enter your username"
+                required
+              />
+            </div>
+            <div class="form__field">
+              <input
+                type="password"
+                name="user_pass"
+                id="user_pass"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+            <button type="submit">Sign In</button>
+          </form>
+        </div>
+        <!-- signIn  end  -->
+      </div>
+    </div>
+  </body>
+</html>
