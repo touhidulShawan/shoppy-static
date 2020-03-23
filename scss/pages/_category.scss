@@ -81,3 +81,9 @@
     font-weight: bold;
   }
 }
+
+@media (max-width: 360px) {
+  .category__title {
+    margin: 0.8rem;
+  }
+}
