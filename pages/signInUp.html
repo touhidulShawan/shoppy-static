@@ -21,7 +21,7 @@
             <a href="./shop.html" class="nav__link">shop</a>
           </li>
           <li class="nav__items">
-            <a href="./signIn.html" class="nav__link active__link">Login</a>
+            <a href="./signInUp.html" class="nav__link active__link">Login</a>
           </li>
           <li class="cart">
             <span class="cart__icon">
@@ -33,7 +33,7 @@
     </nav>
     <!-- navbar end  -->
     <!-- page main content start here - -->
-    <div class="login__container container">
+    <div class="signInUp__container ">
       <div class="login__wrapper">
         <!-- signIn  start -->
         <div class="signIn__avatar">
@@ -47,29 +47,67 @@
           <form action="">
             <div class="form__field">
               <input
-                type="text"
-                name="username"
-                id="username"
-                placeholder="Enter your username"
+                type="email"
+                name="signInEmail"
+                id="signInEmail"
+                placeholder="Enter your email"
                 required
               />
             </div>
             <div class="form__field">
               <input
                 type="password"
-                name="user_pass"
-                id="user_pass"
+                name="signInPassword"
+                id="signInPassword"
                 placeholder="Enter your password"
                 required
               />
             </div>
             <div class="btn__container">
-              <button type="submit" class="btn btn--submit">Login</button>
-              <a href="signUp.html" class="btn--signUp">Create an Account</a>
+              <button type="submit" class="btn btn--submit">Sign In</button>
             </div>
           </form>
         </div>
         <!-- signIn  end  -->
+      </div>
+      <!-- signup start  -->
+      <div class="signUp_wrapper">
+        <h2 class="signUp_header">Create an Account</h2>
+        <div class="signUp_input-container">
+          <form action="" class="signUp_form">
+            <div class="form__field">
+              <input
+                type="email"
+                name="signUpEmail"
+                id="signUpEmail"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="form__field">
+              <input
+                type="password"
+                name="signUpPassword"
+                id="signUpPassword"
+                placeholder="Enter password"
+                required
+              />
+            </div>
+            <div class="form__field">
+              <input
+                type="password"
+                name="confirmSignUpPassword"
+                placeholder="Confirm your password"
+                required
+              />
+            </div>
+            <div class="btn__container">
+              <button type="submit" class="btn btn--submit signUp--btn">
+                Sign Up
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </body>

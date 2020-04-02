@@ -1,17 +1,16 @@
 @mixin inputField {
-  input[type="text"],
+  input[type="email"],
   input[type="password"] {
     margin-bottom: 2.8rem;
     background: var(--bg);
     outline: none;
     border: none;
-    border-left: 5px solid var(--accent);
+    width: 100%;
     color: var(--color);
     padding: 1.3rem 2rem;
-    width: 35rem;
     font-size: 1.5rem;
     letter-spacing: 0.24rem;
-    box-shadow: 0px 1.35px 1.45px 1px rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
   }
 }
 
@@ -28,8 +27,13 @@
   transition: all 0.4s ease-in-out;
   text-decoration: none;
   background: transparent;
+  padding: 1.2rem 2.5rem;
+  line-height: 1.8rem;
+  text-align: center;
+  border-radius: 5px;
 
   &:hover {
-    color: var(--dark);
+    color: var(--secondary);
+    letter-spacing: 0.38rem;
   }
 }
