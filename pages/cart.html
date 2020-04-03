@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="nav">
+      <div class="container nav__container">
+        <a href="../index.html" class="logo">
+          <span class="logo__text">shoppy</span>
+        </a>
+        <ul class="nav__ul">
+          <li class="nav__items">
+            <a href="../index.html" class="nav__link">home</a>
+          </li>
+          <li class="nav__items">
+            <a href="../pages/signInUp.html" class="nav__link">Login</a>
+          </li>
+          <li class="cart">
+            <a href="./cart.html" class="nav__link ">
+              <span class="cart__icon">
+                <img src="../img/icons/shopping_cart.svg" alt="cart icon" />
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- navbar end  -->
+    <div class="container cart_container">
+      <!-- product that will be added to cart with product name and price and quantity  -->
+      <div class="cart__products">
+        <!-- single product  -->
+        <div class="product-container">
+          <div class="product-image">
+            <img src="../img/Jackets/jacket_one.jpg" alt="product image" />
+          </div>
+          <div class="product-details">
+            <h3 class="product-name">Cool Jacket</h3>
+          </div>
+          <div class="product-price">
+            <p>$45</p>
+          </div>
+          <div class="remove-product">
+            <button id="close-btn">X</button>
+          </div>
+        </div>
+        <div class="product-container">
+          <div class="product-image">
+            <img src="../img/Hats/hat_five.jpg" alt="product image" />
+          </div>
+          <div class="product-details">
+            <h3 class="product-name">Cool Hats</h3>
+          </div>
+          <div class="product-price">
+            <p>$45</p>
+          </div>
+          <div class="remove-product">
+            <button id="close-btn">X</button>
+          </div>
+        </div>
+        <div class="cart_product-footer">
+          <div class="continue-shopping">
+            <a href="./winter.html">Continue Shopping</a>
+          </div>
+          <div class="total-price">
+            <span>Total Price: $431</span>
+          </div>
+        </div>
+      </div>
+      <!-- payment option  -->
+      <div class="payment__option">
+        <div class="walletIcon">
+          <i
+            ><object
+              data="../img/icons/wallet-solid.svg"
+              type="image/svg+xml"
+            ></object
+          ></i>
+        </div>
+        <div class="payment_details">
+          <h2>Place order</h2>
+          <span class="message">only cash on delivery now available</span>
+          <button class="placeOrderBtn">Place Order</button>
+        </div>
+      </div>
+    </div>
+    <script src="../js/counter.js"></script>
+  </body>
+</html>
