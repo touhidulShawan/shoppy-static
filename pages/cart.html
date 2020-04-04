@@ -10,18 +10,18 @@
     <!-- navbar start -->
     <nav class="nav">
       <div class="container nav__container">
-        <a href="../index.html" class="logo">
+        <a href="../index.php" class="logo">
           <span class="logo__text">shoppy</span>
         </a>
         <ul class="nav__ul">
           <li class="nav__items">
-            <a href="../index.html" class="nav__link">home</a>
+            <a href="../index.php" class="nav__link">home</a>
           </li>
           <li class="nav__items">
             <a href="../pages/signInUp.html" class="nav__link">Login</a>
           </li>
           <li class="cart">
-            <a href="./cart.html" class="nav__link ">
+            <a href="./cart.html" class="nav__link">
               <span class="cart__icon">
                 <img src="../img/icons/shopping_cart.svg" alt="cart icon" />
               </span>
@@ -45,19 +45,15 @@
           <div class="product-price">
             <p>$45</p>
           </div>
-          <div class="remove-product">
-            <button id="close-btn">X</button>
-          </div>
-        </div>
-        <div class="product-container">
-          <div class="product-image">
-            <img src="../img/Hats/hat_five.jpg" alt="product image" />
-          </div>
-          <div class="product-details">
-            <h3 class="product-name">Cool Hats</h3>
-          </div>
-          <div class="product-price">
-            <p>$45</p>
+          <div class="product-quantity">
+            <form action="">
+              <input
+                type="number"
+                name="product-quantity"
+                id="product-quantity"
+                value="1"
+              />
+            </form>
           </div>
           <div class="remove-product">
             <button id="close-btn">X</button>
@@ -89,6 +85,5 @@
         </div>
       </div>
     </div>
-    <script src="../js/counter.js"></script>
   </body>
 </html>
