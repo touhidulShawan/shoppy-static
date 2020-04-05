@@ -1,0 +1,42 @@
+.success_container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../img/icons/registration_bg.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.success_msg {
+  background: var(--light);
+  text-align: center;
+  padding: 3rem 4.5rem;
+  h2 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.38rem;
+  }
+
+  p {
+    font-size: 2.8rem;
+    letter-spacing: 0.28rem;
+    background: var(--bg3);
+    padding: 1rem 2rem;
+    margin: 1.8rem 0;
+    color: var(--light);
+    text-align: center;
+    text-transform: lowercase;
+  }
+
+  span {
+    font-size: 1.48rem;
+    letter-spacing: 0.3rem;
+
+    a {
+      color: var(--bg3);
+    }
+  }
+}

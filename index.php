@@ -1,9 +1,3 @@
-<?php //require "./db/connect.php";
-//
-////$dataBase = new Database();
-////$db = $dataBase->getConnection();
-//?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,9 +8,17 @@
 </head>
 <body>
 <!--    navabr -->
-<?php require "./includes/navbar.php" ?>
+<?php include "navbar.php"?>
+<!-- alert  -->
+<!-- <div class="container" id="alert_container">
+<div class="alert">
+    <p class="alertMsg">Please sign in first</p>
+    <button id="alertClose" onclick="closeBtn()"></button>
+</div>
+</div> -->
 <!-- collections navigation start -->
-<?php require "./includes/collection-navigation.php" ?>
+<?php require "collection-navigation.php"?>
 <!-- collections navigation end  -->
+<script src="./js/alert.js"></script>
 </body>
 </html>

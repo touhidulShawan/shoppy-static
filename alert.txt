@@ -1,0 +1,6 @@
+<div class="container">
+<div class="alert">
+    <p class="alertMsg">Please sign in first</p>
+    <button id="alertClose"></button>
+</div>
+</div>

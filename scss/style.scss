@@ -1,7 +1,9 @@
 @import "./partials/reset";
 @import "./partials/colors";
+@import "./components/alert";
 @import "./components/navbar";
 @import "./components/navigation";
 @import "./pages/signIn";
 @import "./components/collections-card";
 @import "./pages/cart";
+@import "./components/success_message";

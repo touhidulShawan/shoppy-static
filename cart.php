@@ -4,32 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cart</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- navbar start -->
-    <nav class="nav">
-      <div class="container nav__container">
-        <a href="../index.php" class="logo">
-          <span class="logo__text">shoppy</span>
-        </a>
-        <ul class="nav__ul">
-          <li class="nav__items">
-            <a href="../index.php" class="nav__link">home</a>
-          </li>
-          <li class="nav__items">
-            <a href="../pages/signInUp.html" class="nav__link">Login</a>
-          </li>
-          <li class="cart">
-            <a href="./cart.html" class="nav__link">
-              <span class="cart__icon">
-                <img src="../img/icons/shopping_cart.svg" alt="cart icon" />
-              </span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <?php require "navbar.php" ?>
     <!-- navbar end  -->
     <div class="container cart_container">
       <!-- product that will be added to cart with product name and price and quantity  -->
@@ -61,7 +40,7 @@
         </div>
         <div class="cart_product-footer">
           <div class="continue-shopping">
-            <a href="./winter.html">Continue Shopping</a>
+            <a href="winter.php">Continue Shopping</a>
           </div>
           <div class="total-price">
             <span>Total Price: $431</span>

@@ -1,0 +1,39 @@
+#alert_container {
+  display: block;
+  background: var(--alert);
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 2rem;
+  margin: 3rem auto;
+  border-radius: 5px;
+}
+
+.alert {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.alertMsg {
+  letter-spacing: 0.25rem;
+  color: var(--light);
+  text-transform: uppercase;
+}
+
+#alertClose {
+  width: 2.8rem;
+  height: 2.8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  background-image: url("../../img/icons/times-solid.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: none;
+
+  object {
+    width: 100%;
+    height: 100%;
+  }
+}
