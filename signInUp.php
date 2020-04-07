@@ -1,4 +1,4 @@
-<?php include "./signupHandle.php" ?>
+<?php include "./signInUpHandle.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,27 +23,29 @@
             ></object>
         </div>
         <div class="signIn">
-            <form action="">
+            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])  ;?>" method="post" class="signin-form">
+                <div class="error-input"><?php echo $signInEmailErr; ?></div>
                 <div class="form__field">
                     <input
                             type="email"
                             name="signInEmail"
                             id="signInEmail"
                             placeholder="Enter your email"
-                            required
+                            value="<?php echo $signInEmail;?>"
+
                     />
                 </div>
+                <div class="error-input"><?php echo $signInPassErr; ?></div>
                 <div class="form__field">
                     <input
                             type="password"
                             name="signInPassword"
                             id="signInPassword"
                             placeholder="Enter your password"
-                            required
                     />
                 </div>
                 <div class="btn__container">
-                    <button type="submit" class="btn btn--submit">Sign In</button>
+                    <button type="submit" name="signIn" class="btn btn--submit">Sign In</button>
                 </div>
             </form>
         </div>
@@ -53,7 +55,7 @@
     <div class="signUp_wrapper">
         <h2 class="signUp_header">Create an Account</h2>
         <div class="signUp_input-container">
-            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post" class="signUp_form">
+            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])  ;?>" method="post" class="signUp_form">
                 <div class="form__field">
                     <div class="error-input"><?php echo $emailErr; ?></div>
                     <input
